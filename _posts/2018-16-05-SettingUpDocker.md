@@ -18,9 +18,9 @@ Installer for Docker from the docker store https://store.docker.com/editions/com
 ## Installing Docker
 1) Run the installer as admin
 
-2) The installer will run and download a package. When this has finished, mae sure that the tick box to use Windows containers is NOT selected and then press OK. This will then install.
+2) The installer will run and download a package. When this has finished, mae sure that the tick box to use Windows containers is IS selected and then press OK. This will then install.
 
-![Install and use Windows Containers]({{ site.baseurl }}/img/dockerInstallUseLinux.png)
+![Install and use Windows Containers]({{ site.baseurl }}/img/dockerInstallUseWindows.png)
 
 3) Once finished, it will tell you that you need to log out of Windows to complete, so select the option to do this.
 
