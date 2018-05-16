@@ -6,7 +6,7 @@ date: 2018-05-16
 
 <!--![image-title-here]({{ site.baseurl }}/img/aad-dc-admin-group.png) -->
 
-##Overview
+## Overview
 This blog goes through installing and setting up Docker on a virtual machine.
 
 ## Prerequisites
