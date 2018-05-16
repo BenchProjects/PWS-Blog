@@ -33,9 +33,12 @@ Each time the WORKDIR command is used it set the working directory in the contai
 
 
 5) Make sure the docker-container project is set as the start up project and press run to run with docker. If successful it should open your website in a new browser.
+![Step5A]({{ site.baseurl }}/img/HW.RunningSite.png)<br/><br/>
 
 To confirm it is working open up a command prompt and type 'docker ps' you should then see your container listed.
-![Step5]({{ site.baseurl }}/img/HW.CheckContainer.png)<br/><br/>
+![Step5B]({{ site.baseurl }}/img/HW.CheckContainer.png)<br/><br/>
+
+
 
 
 
