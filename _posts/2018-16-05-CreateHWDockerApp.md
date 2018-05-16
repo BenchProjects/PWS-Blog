@@ -9,7 +9,9 @@ This blog describes how to set up an azure VM and create a .Net Core Web App wit
 
 ## Prerequisites
 An azure account with credit.
+
 Remote desktop client.
+
 Network access to use remote desktop.
 
 ## Create VM
