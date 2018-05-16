@@ -5,4 +5,4 @@ date: 2018-05-16
 --- 
 
 Something
-![image-title-here](/images/CreateAzureVM_1.jpg)
+![image-title-here](/images/CreateAzureVM.png)
