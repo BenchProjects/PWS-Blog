@@ -5,7 +5,7 @@ date: 2018-05-16
 --- 
 
 Something
-![image-title-here](/images/CreateAzureVM.png)
+![image-title-here](https://github.com/BenchProjects/PWS-Blog/blob/master/images/CreateAzureVM.png)
 
 <figure class="half">
     <a href="/images/CreateAzureVM.png">
