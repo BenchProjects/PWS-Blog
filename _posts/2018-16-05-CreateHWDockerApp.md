@@ -15,5 +15,5 @@ An azure account with credit.
 Log into your azure account.
 Select Virtual machines from the left hand pane or if you can't see it go to All Services and add it. Click the add button.
 
-![alt text](https://github.com/BenchProjects/PWS-Blog/assets/images/CreateAzureVM_1.png  "Logo Title Text 1")
+![image-title-here](/images/CreateAzureVM_1.jpg)
 
