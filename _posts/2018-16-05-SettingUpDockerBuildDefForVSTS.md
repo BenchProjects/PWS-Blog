@@ -31,3 +31,9 @@ d) Once generated you will get to see the new personal access token for the firs
 
 3) Here you need to enter repository connection details. Select your source as GitHub. Give your connection a new name and click authorize with a github personal access token.
 ![Step2]({{ site.baseurl }}/img/VSTS_Build/VSTS_SelectRepository1.png)<br/><br/>
+
+Enter your token that you got in step one.
+![Step2]({{ site.baseurl }}/img/VSTS_Build/VSTS_EnterPAT.png)<br/><br/>
+
+Select your repository and branch:
+![Step2]({{ site.baseurl }}/img/VSTS_Build/VSTS_SelectRepository2.png)<br/><br/>
