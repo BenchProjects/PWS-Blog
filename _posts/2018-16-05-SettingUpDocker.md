@@ -38,6 +38,20 @@ Installer for Docker from the docker store https://store.docker.com/editions/com
 ![Starting]({{ site.baseurl }}/img/dockerStarting2.png)
 
 
+## Configuring Docker
+
+1) Once Docker has launched, you will see a screen telling you that Docker is up and running! It will also prompt you to login with a Docker Id. This needs to be done so that you can access the Docker container repository. 
+
+![Login]({{ site.baseurl }}/img/dockerLogin.png)
+
+2) Once logged in, right click the icon in the system tray and select the option to switch to Linux containers. This is because if you select this when installing Docker, it won't always install properly. So when installing you set it to use Windows, and then once installed you change it to use Linux. This may take some time.
+
+![Switch to Linux containers]({{ site.baseurl }}/img/dockerSwitchToLinux.png)
+
+
+That's it. You virtual machine is ready to work with Docker containers.
+
+
 
 
 
