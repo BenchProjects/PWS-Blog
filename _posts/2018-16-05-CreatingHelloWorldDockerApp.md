@@ -25,7 +25,9 @@ Create a new solution based on the template ASP.Net Core Web Application named H
 4) Edit your dockerFile so it looks like the below:
 ![DockerFile]({{ site.baseurl }}/img/HW.ProjectFiles.png)<br/><br/>
 
-In the file you can see the FROM instructions which point at base dotnet core images which contain the basic files necessary to run a .net core app. Each time you see WORKDIR this indicates we want the following commands to be run in that location within the container. If they don't exist they will be created. Sometimes it can be useful to use RUN commands for debug purposes such as RUN dir which will list the files within the current work directory for the container. You can see the bit that copies the HelloWorld project then restores all of the dependencies. The part that says COPY . . essentially says copy all files to the containers current working directory.
+This essentially copies the hello world files to the src/HelloWorld directory in the container. The dependencies are restored and the project is built and output to the app folder within the container.
+
+Each time the WORKDIR command is used it set the working directory in the container for all further commands to execute on. The directories are created as needed. COPY . . is the instruction to copy all files from the project into the container. The FROM statements point to base images that contain the files need to build, run the code. 
 
 
 
