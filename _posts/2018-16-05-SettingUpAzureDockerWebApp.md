@@ -10,7 +10,9 @@ This blog will go through creating a Docker web app on Azure which will be used 
 ## Prerequisites
 
 An Azure account.
+
 A Docker container registry on Azure.
+
 An image built and pushed to your container registry from VSTS
 
 ## Setting up an web app that will run you application from a Docker container
