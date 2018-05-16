@@ -4,6 +4,6 @@ author: Will Andrews
 date: 2018-05-16
 --- 
 
-Somethingelse
-![image-title-here](/images/CreateAzureVM.png)
+Somethingelsesdewz
+![image-title-here](/images/test.png)
 
