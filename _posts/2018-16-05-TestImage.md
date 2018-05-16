@@ -5,5 +5,5 @@ date: 2018-05-16
 --- 
 
 Somethingelsesdewz
-![image-title-here](/images/aad-dc-admin-group.png)
+![image-title-here](/img/aad-dc-admin-group.png)
 
