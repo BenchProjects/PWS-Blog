@@ -4,6 +4,6 @@ author: Will Andrews
 date: 2018-05-16
 --- 
 
-Somethingeslsesdewzca dsd
+S
 ![image-title-here](/img/aad-dc-admin-group.png)
 
