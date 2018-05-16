@@ -25,7 +25,7 @@ Create a new solution based on the template ASP.Net Core Web Application named H
 ![Step3]({{ site.baseurl }}/img/HW.ProjectFiles.png)<br/><br/>
 
 4) Edit your dockerFile so it looks like the below:
-![DockerFile]({{ site.baseurl }}/img/HW.ProjectFiles.png)<br/><br/>
+![DockerFile]({{ site.baseurl }}/img/HW.DockerFile.png)<br/><br/>
 
 This essentially copies the hello world files to the src/HelloWorld directory in the container. The dependencies are restored and the project is built and output to the app folder within the container.
 
@@ -33,9 +33,12 @@ Each time the WORKDIR command is used it set the working directory in the contai
 
 
 5) Make sure the docker-container project is set as the start up project and press run to run with docker. If successful it should open your website in a new browser.
+![Step5A]({{ site.baseurl }}/img/HW.RunningSite.png)<br/><br/>
 
-To confirm it is working open up a command prompt and type 'docker ps' you should then see your container listed.
-![Step5]({{ site.baseurl }}/img/HW.CheckContainer.png)<br/><br/>
+You can also view the running container by using a command prompt and typing 'docker ps':
+![Step5B]({{ site.baseurl }}/img/HW.CheckContainer.png)<br/><br/>
+
+
 
 
 
