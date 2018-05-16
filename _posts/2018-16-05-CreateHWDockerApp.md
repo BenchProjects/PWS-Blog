@@ -9,6 +9,8 @@ This blog describes how to set up an azure VM and create a .Net Core Web App wit
 
 ## Prerequisites
 An azure account with credit.
+Remote desktop client.
+Network access to use remote desktop.
 
 ## Create VM
 
@@ -31,8 +33,15 @@ An azure account with credit.
 ![Step5]({{ site.baseurl }}/img/VMAzureSettings.png)
 
 ## Access VM
+1) In your azure portal navigate to Virtual Machines in the left hand pane or go to all settings and select it. As you might expect this page lists all of your virtual machines. Click on the name of the one you have just created.
 ![Step6]({{ site.baseurl }}/img/VirtualMachines.png)
+
+2) At the top you will see the connect icon which allows you to download an rdp file. Go ahead and click on it and download the file.
 ![Step7]({{ site.baseurl }}/img/downloadRdpFile.png)
+
+3) Once the file has downloaded open up the file add appropriate details such as proxy settings and press connect. Here you will need to input the admin user credentials. After which you should be logged into the system.
 ![Step8]({{ site.baseurl }}/img/ConnectViaRdp.png)
+
+Note if you need to reset the admin creds you can do that in the virtual machine settings on the azure portal.
 ![OptionalStep]({{ site.baseurl }}/img/resetAdminAccount.png)
 
