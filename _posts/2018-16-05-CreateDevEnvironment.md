@@ -1,5 +1,5 @@
 ---
-title:  1 Creating azure dev environment
+title: 1 Creating azure dev environment
 author: philip_hine
 date: 2018-05-16
 --- 

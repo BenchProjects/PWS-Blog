@@ -1,5 +1,5 @@
 ---
-title:  2 Settting up Docker on Windows 10 Virtual Machine
+title: 2 Setting up Docker on Windows 10 Virtual Machine
 author: will_andrews
 date: 2018-05-16
 --- 
