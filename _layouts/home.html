@@ -5,7 +5,7 @@ layout: archive
 <!--<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 {% for post in paginator.posts reversed  %} -->
 <h3 class="archive__subtitle">Setting Docker up with Azure and VSTS</h3>
-{% assign posts = paginator.posts reversed | sort: 'title' %}
+{% assign posts = paginator.posts | sort: 'title' %}
 
 {% for post in posts %}
   {% include archive-single.html %}
