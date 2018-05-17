@@ -1,5 +1,5 @@
 ---
-title:  Setting up Azure Docker container registry
+title:  4: Setting up Azure Docker container registry
 author: will_andrews
 date: 2018-05-16
 --- 
