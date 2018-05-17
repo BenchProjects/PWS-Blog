@@ -1,6 +1,6 @@
 ---
 title:  Settting up Docker on Windows 10 Virtual Machine
-author: Will Andrews
+author: will_Andrews
 date: 2018-05-16
 --- 
 
