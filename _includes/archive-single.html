@@ -29,14 +29,14 @@
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
+
+      <!-- Look the author details up from the site config. -->
+      {% assign author = site.data.authors[post.author] %}
+
+      {% if author %}
+      <small>{{ author.name }}</small>
+      {% endif %}
     </h2>
-
-    <!-- Look the author details up from the site config. -->
-    {% assign author = site.data.authors[post.author] %}
-
-    {% if author %}
-    <p><small>{{ author.name }}</small><p/>
-    {% endif %}
 
     {% if post.read_time %}
       <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i>{% include read-time.html %}</p>
