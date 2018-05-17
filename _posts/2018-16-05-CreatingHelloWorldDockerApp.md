@@ -2,6 +2,7 @@
 title: 3 Creating docker enabled Hello world app
 author: philip_hine
 date: 2018-05-16
+order: 3
 --- 
 
 ## Overview

@@ -2,6 +2,7 @@
 title: 5 Setting up a VSTS Docker Build
 author: philip_hine
 date: 2018-05-16
+order: 5
 --- 
 
 ## Overview
