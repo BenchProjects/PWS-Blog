@@ -35,7 +35,7 @@
     {% assign author = site.data.authors[post.author] %}
 
     {% if author %}
-    <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+    <p>{{ author.name }}<p/>
     {% endif %}
 
     {% if post.read_time %}
