@@ -14,9 +14,6 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<!-- Look the author details up from the site config. -->
-{% assign author = site.data.authors[page.author] %}
-
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -33,6 +30,10 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
+
+          <!-- Look the author details up from the site config. -->
+          {% assign author = site.data.authors[page.author] %}
+
           {% if author %}
           <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
           {% endif %}
