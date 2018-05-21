@@ -13,8 +13,8 @@ A docker file is a text file that seems similar to a .bat file. A list of comman
 Each instruction in the Dockerfile adds a new “layer” to the image, with layers representing a portion of the images file system that either adds to or replaces the layer below it. Layers are key to Docker’s lightweight yet powerful structure.
 
 So the following happens on every instruction:
-1) Create a temporary container from the previous image layer (or the base FROM image for the first command;
-2) Run the Dockerfile instruction in the temporary "intermediate" container;
+1) Create a temporary container from the previous image layer (or the base FROM image for the first command<br/>
+2) Run the Dockerfile instruction in the temporary "intermediate" container<br/>
 3) Save the temporary container as a new image layer.
 
 ## Example
@@ -207,6 +207,9 @@ The copy command copies files from the dockerfile directory or sub directories t
 ```
 COPY utils/*.csproj ./utils/
 ```
+## RUN
+A run command will execute a command line instruction using the current working directory of the container.
+
 
 ## Working directory
 You may need to change the working directory for subsequent commands. A common need is once you have specified your base image then you may want to use the RUN command to look at the different directories e.g RUN ls  (list of all files and folders in directory) among other things you may want to do such as dotnet restore etc.
