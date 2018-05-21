@@ -1,5 +1,5 @@
 ---
-title:  Create new docker VSTS build agent
+title:  Understanding docker file
 author: Phil Hine
 date: 2018-05-16
 --- 
