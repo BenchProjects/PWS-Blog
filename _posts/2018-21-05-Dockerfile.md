@@ -12,7 +12,8 @@ A docker file is a text file that seems similar to a .bat file. A list of comman
 
 Each instruction in the Dockerfile adds a new “layer” to the image, with layers representing a portion of the images file system that either adds to or replaces the layer below it. Layers are key to Docker’s lightweight yet powerful structure.
 
-So the following happens on every instruction:</br>
+So the following happens on every instruction: 
+</br>
 1) Create a temporary container from the previous image layer (or the base FROM image for the first command<br/>
 2) Run the Dockerfile instruction in the temporary "intermediate" container<br/>
 3) Save the temporary container as a new image layer.
