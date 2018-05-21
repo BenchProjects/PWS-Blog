@@ -1,7 +1,8 @@
 ---
-title:  Setting up Azure Docker web app
-author: Will Andrews
+title: Setting up Azure Docker web app
+author: will_andrews
 date: 2018-05-16
+order: 6
 --- 
 
 ## Overview

@@ -1,7 +1,8 @@
 ---
-title:  Creating azure dev environment
-author: Phil Hine
+title: Creating azure dev environment
+author: philip_hine
 date: 2018-05-16
+order: 1
 --- 
 
 ## Overview

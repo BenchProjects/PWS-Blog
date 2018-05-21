@@ -1,7 +1,8 @@
 ---
-title:  Creating docker enabled Hello world app
-author: Phil Hine
+title: Creating docker enabled Hello world app
+author: philip_hine
 date: 2018-05-16
+order: 3
 --- 
 
 ## Overview
