@@ -139,7 +139,7 @@ The first command to appear in the file other than a comment should be either FR
 ## Parser directive
 Parser directives instruct the docker daemon on how to read\treat the file and therefore must be at the top of the file and must not have any spaces before them. As soon as any line has anything but a parser directive all subsequent parser directives are treated as a comment.
 
-At the time of writing there is only one supported which is escape. ***NEED TO UNDERSTAND THIS AS DOC IS CONFUSING***
+At the time of writing there is only one supported which is escape. The default escape character is a backslash and is used to indicate a instruction is on multiple lines. This can obviously cause problems with windows file paths so you can set it to a tilde character to avoid a conflict. A tilde or backslash are the only characters possible. 
 
 ```docker
 # escape =`
@@ -212,9 +212,9 @@ A run command will execute a command line instruction using the current working 
 
 
 ## Working directory
-You may need to change the working directory for subsequent commands. A common need is once you have specified your base image then you may want to use the RUN command to look at the different directories e.g RUN ls  (list of all files and folders in directory) among other things you may want to do such as dotnet restore etc.
+You may need to change the working directory for subsequent commands (RUN, CMD, ENTRYPOINT, COPY etc). A common need is once you have specified your base image then you may want to use the RUN command to look at the different directories e.g RUN ls  (list of all files and folders in directory) among other things you may want to do such as dotnet restore etc.
 
-You should note that you should be careful if you want a new folder that one with the same name doesn't already exist that came with the base image as it could have side effects you weren't expecting.
+You should note that you should be careful if you want a new folder that one with the same name doesn't already exist that came with the base image as it could have side effects you weren't expecting.d.
 
 ## Tips
 
