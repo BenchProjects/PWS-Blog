@@ -17,7 +17,8 @@ A hello world application
 
 1) Log into AWS<br/><br/>
 2) Click on the services dropdown and enter 'container' into the filter box. Then click on Elastic Container service.<br/><br/>
-![Step1]({{ site.baseurl }}/img/AWS_ECR/1_Select_ECS.png)<br/><br/>
+![Step1]({{ site.baseurl }}/img/AWS_ECR/1_Select_ECS.PNG)<br/><br/>
+
 
 
 3) 
