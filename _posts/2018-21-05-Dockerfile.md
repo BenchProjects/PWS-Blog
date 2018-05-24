@@ -1,5 +1,5 @@
 ---
-title:  Understanding docker file
+title:  Understanding a docker file
 author: Phil Hine
 date: 2018-05-16
 --- 
