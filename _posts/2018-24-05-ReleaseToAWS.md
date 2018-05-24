@@ -32,13 +32,14 @@ We need to define the environments we wish to release to by creating a ECS clust
 
 1) Navigate again to the ECS page, if you followed point 2 above then you should have a bookmark at the top of the page you can use to get here quickly.<br/><br/>
 2) In the left pane click on clusters and in the main pane 'Create Cluster')<br/><br/>
-![Create ECS Cluster]({{ site.baseurl }}/img/AWS_ECR/Release/4-CreateCluster.PNG)<br/><br/>
+![Create ECS Cluster]({{ site.baseurl }}/img/AWS_ECR_CLUSTER/4-CreateCluster.PNG)<br/><br/>
 3) Now select the cluster type, which for these set of tutorials should be set to linux and press next step.)<br/><br/>
-![Select ECS Cluster Template]({{ site.baseurl }}/img/AWS_ECR/Release/5-SelectClusterTemplate.PNG)<br/><br/>
+![Select ECS Cluster Template]({{ site.baseurl }}/img/AWS_ECR_CLUSTER/5-SelectClusterTemplate.PNG)<br/><br/>
 4) Enter a name for your cluster. For this tutorial leave all other settings as default (it would be worth taking time to understand this once you have followed this basic example). Next press create.<br/><br/>
-![Configure ECS Cluster]({{ site.baseurl }}/img/AWS_ECR/Release/6_ConfigureCluster.PNG)<br/><br/>
+![Configure ECS Cluster]({{ site.baseurl }}/img/AWS_ECR_CLUSTER/6_ConfigureCluster.PNG)<br/><br/>
 5) On the next page you will see your environment being set up. Eventually all tasks will complete and you will have a cluster set up ready for use. Make a note of the name you gave to the cluster.<br/><br/>
-![Completion ECS Cluster Screen]({{ site.baseurl }}/img/AWS_ECR/Release/6-Created.PNG)<br/><br/>
+![Completion ECS Cluster Screen]({{ site.baseurl }}/img/AWS_ECR_CLUSTER/6-Created.PNG)<br/><br/>
+
 
 
 
