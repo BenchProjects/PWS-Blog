@@ -42,7 +42,6 @@ We need to define the environments we wish to release to by creating a ECS clust
 
 
 
-
-
+![Select elastic container service]({{ site.baseurl }}/img/AWS_ECR/1_Select_ECS.PNG)<br/><br/>
 
 
