@@ -3,3 +3,9 @@ VS > Existing Project
 Project > Docker Support
 
 Adding docker support
+
+
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/get-set-up-for-amazon-ecs.html
+
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html
+

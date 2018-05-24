@@ -139,7 +139,7 @@ The first command to appear in the file other than a comment should be either FR
 ## Parser directive
 Parser directives instruct the docker daemon on how to read\treat the file and therefore must be at the top of the file and must not have any spaces before them. As soon as any line has anything but a parser directive all subsequent parser directives are treated as a comment.
 
-At the time of writing there is only one supported which is escape. The default escape character is a backslash and is used to indicate a instruction is on multiple lines. This can obviously cause problems with windows file paths so you can set it to a tilde character to avoid a conflict. A tilde or backslash are the only characters possible. 
+At the time of writing there is only one supported which is escape. The default escape character is a backslash and is used to indicate a instruction spans multiple lines. This can obviously cause problems with windows file paths so you can set it to a tilde character to avoid a conflict. A tilde or backslash are the only characters possible. 
 
 ```docker
 # escape =`
