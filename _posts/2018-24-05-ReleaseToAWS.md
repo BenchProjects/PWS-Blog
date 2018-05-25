@@ -51,7 +51,7 @@ We need to define the environments we wish to release to by creating a ECS clust
 <br/><br/>
 
 When you have created your user then you should see the following page:
-![User set up completed]({{ site.baseurl }}/img/AWS_ECR/user/Completed.png)<br/><br/
+![User set up completed]({{ site.baseurl }}/img/AWS_ECR/Release/user/Completed.png)<br/><br/
 Make a note of your access key id and secret access key
 
 2) Open a command prompt and type 
