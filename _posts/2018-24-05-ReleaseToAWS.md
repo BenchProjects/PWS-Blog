@@ -10,12 +10,12 @@ This post shows you how to use VSTS to release a docker image to an AWS EC2 clus
 ## Prerequisites
 An AWS account<br/>
 A VSTS account<br/>
-A VSTS host with docker installed<br/>
+A windows VSTS host with docker installed and powershell<br/>
 A hello world application
 
 ## Create a Elastic Container Registry (ECR)
 
-1) Log into AWS<br/><br/>
+1) Log into AWS and select region N. Virginia from the top menu on the right (just for purposes of this tutorial)<br/><br/>
 2) Click on the services dropdown and enter 'container' into the filter box. Then click on Elastic Container service.<br/><br/>
 ![Select elastic container service]({{ site.baseurl }}/img/AWS_ECR/1_Select_ECS.PNG)<br/><br/>
 3) Press the pin icon that lives alongside the top menu, this will allow you to easily access this area in future.<br/><br/>
@@ -40,5 +40,39 @@ We need to define the environments we wish to release to by creating a ECS clust
 5) On the next page you will see your environment being set up. Eventually all tasks will complete and you will have a cluster set up ready for use. Make a note of the name you gave to the cluster.<br/><br/>
 ![Completion ECS Cluster Screen]({{ site.baseurl }}/img/AWS_ECR_CLUSTER/6_Created.png)<br/><br/>
 
+## Installing AWS CLI and AWS Tools
+
+1) Log into your VSTS host machine.
+2) Browse to https://aws.amazon.com/powershell/ and install the powershell tools.
+3) Browse to https://aws.amazon.com/cli/ and download the appropriate msi and run it and install the aws cli.
+
+## Setting up AWS Credentials for Powershell and AWS CLI
+1) **TODO** set up AWS user
+<br/><br/>
+
+When you have created your user then you should see the following page:
+![User set up completed]({{ site.baseurl }}/img/AWS_ECR/user/Completed.png)<br/><br/
+Make a note of your access key id and secret access key
+
+2) Open a command prompt and type 
+```
+c:>aws configure
+```
+This should then be asked to put in your access key id from the previous step, followed by your secret access key and then your region as we selected North Virginia when setting up ECR you should use us-east-1 here. For the last option just press enter.
+![AWS Configure]({{ site.baseurl }}/img/AWS_ECR/7_AWS_CLI_EnterCredentials.png)<br/><br/>
+
+3) Test your credentials work by entering the following in the command line:<br/><br/>
+```
+c:>aws ecr get-login --no-include-email --region us-east-1
+```
+<br/><br/>
+This will generate a login command which you should copy and execute in the same command prompt. If successful you will see 'Login succeeded'.<br/><br/>
+![Enter login command]({{ site.baseurl }}/img/AWS_ECR/8_AWS_CLI_GetLoginDetails.png)<br/><br/>
+![Enter Command Returned]({{ site.baseurl }}/img/AWS_ECR/UseAwsCli_Login_to_AWS.png)<br/><br/>
 
 
+
+
+2) Open up powershell and write the following:
+
+Set-AWSCredential -AccessKey <accesskey> -SecretKey <secretKey> -StoreAs MyProfileName2
