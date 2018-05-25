@@ -47,6 +47,8 @@ We need to define the environments we wish to release to by creating a ECS clust
 3) Browse to https://aws.amazon.com/cli/ and download the appropriate msi and run it and install the aws cli.
 
 ## Setting up AWS Credentials for Powershell and AWS CLI
+
+### AWS CLI
 1) **TODO** set up AWS user
 <br/><br/>
 
@@ -70,9 +72,23 @@ This will generate a login command which you should copy and execute in the same
 ![Enter login command]({{ site.baseurl }}/img/AWS_ECR/8_AWS_CLI_GetLoginDetails.png)<br/><br/>
 ![Enter Command Returned]({{ site.baseurl }}/img/AWS_ECR/UseAwsCli_Login_to_AWS.png)<br/><br/>
 
+### AWS Powershell Tools
 
-
-
-2) Open up powershell and write the following:
-
+1) Open up powershell and write the following which will store the credentials neccessary to connect to AWS - choose a sensible name for -StoreAs parameter and replace access key and secret key with your newly created user's credentials set up previously in the tutorial:
+```powershell
 Set-AWSCredential -AccessKey <accesskey> -SecretKey <secretKey> -StoreAs MyProfileName2
+```
+2) Have a look at the credential profile you just set up
+```powershell
+Get-AWSCredential -ListProfileDetail
+```
+3) Set the credential to use as the name of the profile
+
+4) Now test the login:
+```powershell
+Invoke-Expression -command (aws ecr get-login --no-include-email --region us-east-1)
+```
+If successful you will see the last line saying 'Login Succeeded'.
+
+## Create a Powershell script
+
