@@ -191,3 +191,34 @@ if ($?){
 }
 ```
 
+If you are saying that is a rather large script for just two commands Docker tag and Docker push then you are right but I wanted to make a generic script that can be used repeatedly.
+
+Hopefully the code is self explanatory but if not here is a description of what is going on.
+
+### Login
+The login-To-ec function could have just been
+```powershell
+Invoke-Expression -command (aws ecr get-login --no-include-email --region us-east-1)
+```
+but the problem is you get a warning essentially saying you should not be hardcoding your password even though we wouldn't be. This can cause build to stop when it receives this error.
+
+To get around this I've have implemented a crude way to pretend to input the password through redirection. So I first call the ```aws get-login..``` command and then store the user name and password and url into variables and then make the following call:
+```powershell
+echo "$password" | docker login -u $username --password-stdin $ecr_endpoint
+```
+The ```--password-stdin``` flag says take the password as input and the password variable is being redirected to this command to be taken as input.
+
+In this method I am also using the url returned from the ```aws get-login..``` command to be used to reference the fully qualified ECR image. I thought it would be make the script easier to use than passing in the full registry prefix e.g. 123.dkr.ecr.us-east-1.amazonaws.com.
+
+### Push
+
+The payload of the script lives in the push-to-ecr function. It does two main commands, a docker tag command which make an image based on a source image. The tag should include the repository address and end with the name of the ECR repository name you created earlier in this tutorial along with a tag e.g.
+```powershell
+#Docker tag <nameOfLocalImage> <ECR address>/<ECR Repo Name>:<tag>
+Docker tag mylocalImage 123.dkr.ecr.us-east-1.amazonaws.com/myECRImage:latest
+
+#After you can check to make sure the image was created
+docker image ls
+```
+
+Docker push then uses your credentials you set on the machine and references the tagged image. From the name it knows where to push it. You will see it uploading the layers before finally completing.
